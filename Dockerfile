@@ -1,6 +1,7 @@
 FROM openjdk:8-jdk-slim
 
 RUN apt-get update && \
+  apt-get -y dist-upgrade && \
   apt-get install -y \
   curl \
   libc6-dev \
