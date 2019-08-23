@@ -25,7 +25,7 @@ RUN mkdir -p /opt/jruby/etc \
 		echo 'update: --no-document'; \
 	} >> /opt/jruby/etc/gemrc
 
-RUN gem install bundler -v '~> 2.0' \
+RUN gem install bundler -v '1.17.3' \
   && gem install rake net-telnet xmlrpc
 
 # install things globally, for great justice
