@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-slim
+FROM openjdk:8-jre-slim-buster
 
 RUN apt-get update && \
   apt-get -y dist-upgrade && \
