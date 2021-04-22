@@ -9,7 +9,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
 
 ENV JRUBY_VERSION 9.2.17.0
-ENV JRUBY_SHA256 f10449c82567133908e5e1ac076438307a7f0916f617f40fa314b78873a195dc
+ENV JRUBY_SHA256 7701d3537b3a606d2765ac6d5c40e675ddaa01d3cebad26a21a66e3aadd5c202
 RUN mkdir /opt/jruby \
   && curl -fSL https://repo1.maven.org/maven2/org/jruby/jruby-dist/${JRUBY_VERSION}/jruby-dist-${JRUBY_VERSION}-bin.tar.gz -o /tmp/jruby.tar.gz \
   && echo "$JRUBY_SHA256 /tmp/jruby.tar.gz" | sha256sum -c - \
