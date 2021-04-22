@@ -1,4 +1,4 @@
-FROM openjdk:11-jre-slim-buster
+FROM openjdk:14.0.2-jdk-slim-buster
 
 RUN apt-get update && \
   apt-get -y dist-upgrade && \
